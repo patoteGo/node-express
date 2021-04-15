@@ -1,12 +1,12 @@
-var express = require('express');
+const express = require('express');
 
-var app = express();
-var port = process.env.PORT || 3000;
+const app = express();
+const port = process.env.PORT || 4000;
 
 app.get('/', (req, res) => {
-	res.send('welcome to my API!');
+  res.send('welcome to my API2!');
 });
 
 app.listen(port, () => {
-	console.log('Running on port ' + port);
+  console.log(`Running on port ${port}`);
 });
